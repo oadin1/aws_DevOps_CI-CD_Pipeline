@@ -100,6 +100,7 @@ This creates EC2 instances, an EKS cluster, IAM roles, and an S3 bucket.
       sudo yum install jenkins -y
       sudo systemctl enable jenkins
       sudo systemctl start jenkins
+      
 🔹 Jenkins URL: http://your-ec2-ip:8080
 
 🔹 Step 2: Configure Jenkins Pipeline
@@ -129,15 +130,20 @@ Forward logs from AWS CloudWatch to ELK.
 
 🚀 How to Use This Project?
 Clone the repo:
+
       git clone https://github.com/your-repo/aws-devops-project.git
       cd aws-devops-project
       
 Deploy with Terraform:
+
     terraform init
     terraform apply -auto-approve
     
 Run the CI/CD pipeline in Jenkins
-Deploy to Kubernetes with kubectl apply -f deployment.yaml
+Deploy to Kubernetes with 
+
+        kubectl apply -f deployment.yaml
+        
 Monitor with AWS CloudWatch & ELK
 
 
